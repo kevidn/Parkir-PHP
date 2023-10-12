@@ -12,7 +12,7 @@
         <div class="col-md-8 offset-md-2">
           <div class="card">
             <div class="card-header">
-              INPUT JAM MASUK
+              INPUT KENDARAAN
             </div>
             <div class="card-body">
               <form action="simpan-parkir.php" method="POST">

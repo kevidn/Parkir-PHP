@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>Edit Siswa</title>
+    <title>App Parkir Online</title>
   </head>
 
   <body>
@@ -24,14 +24,14 @@
         <div class="col-md-8 offset-md-2">
           <div class="card">
             <div class="card-header">
-              UPDATE PARKIR
+              Edit Data Kendaraan
             </div>
             <div class="card-body">
               <form action="update-parkir.php" method="POST">
                 
                 <div class="form-group">
                   <label>Plat</label>
-                  <input type="text" name="plat_nomor" value="<?php echo $row['plat_nomor'] ?>" placeholder="Masukkan Plat" class="form-control">
+                  <input type="text" name="plat_nomor" value="<?php echo $row['plat_nomor'] ?>" placeholder="Masukkan Plat" class="form-control" style="text-transform: uppercase">
                   <input type="hidden" name="id_parkir" value="<?php echo $row['id_parkir'] ?>">
                 </div>
 
