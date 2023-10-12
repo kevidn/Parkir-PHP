@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <title>App Parkir Online</title>
   </head>
-  <body style="background-image: url('assets/bg-parkir.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+  <body>
     <div class="container" style="margin-top: 80px">
       <div class="row">
         <div class="col-md-12">
@@ -17,6 +17,7 @@
             </div>
             <div class="card-body">
               <a href="input-jam-masuk.php" class="btn btn-md btn-success" style="margin-bottom: 10px">TAMBAH DATA</a>
+              <a href="logout.php" class="btn btn-md btn-danger" style="margin-bottom: 10px">LOG OUT</a>
               <table class="table table-bordered" id="myTable">
                 <thead>
                   <tr>
@@ -42,7 +43,9 @@
                       <td><?php echo $row['jam_masuk'] ?></td>
                       <td><?php echo $row['jam_keluar'] ?></td>
                       <td class="text-center">
-                        <a href="update-jam-keluar.php?id=<?php echo $row['id_parkir'] ?>" class="btn btn-sm btn-primary">UPDATE JAM KELUAR</a>
+
+                        <a href="edit-parkir.php?id=<?php echo $row['id_parkir'] ?>" class="btn btn-sm btn-primary">EDIT</a>
+                        <a href="update-jam-keluar.php?id=<?php echo $row['id_parkir'] ?>" class="btn btn-sm btn-success">UPDATE (JAM KELUAR)</a>
                         <a href="hapus-parkir.php?id=<?php echo $row['id_parkir'] ?>" class="btn btn-sm btn-danger">HAPUS</a>
                       </td>
                   </tr>

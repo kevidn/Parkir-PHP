@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>App Parkir Online</title>
   </head>
-  <body style="background-image: url('assets/bg-parkir.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+  <body>
     <div class="container" style="margin-top: 80px">
       <div class="row">
         <div class="col-md-8 offset-md-2">
